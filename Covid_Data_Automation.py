@@ -72,8 +72,12 @@ class CovidDataAutomation:
         records = json.loads(records)
 
         with open('covid_data.json', 'a') as file:
+            counter = 0
             for record in records:
                 file.write(json.dumps(record))
+                if counter < len(records) - 1:
+                    file.write("\n")
+                counter += 1
 
     def process_incrementally(self):
         self.data = self.data[self.required_columns] \
