@@ -2681,3 +2681,19 @@
 {"country": "European Union", "date": "2020-01-23", "total_cases": 0.0, "total_deaths": 0.0, "id": "European Union#2020-01-23"}
 {"country": "United States", "date": "2020-01-22", "total_cases": 0.003, "total_deaths": 0.0, "id": "United States#2020-01-22"}
 {"country": "China", "date": "2020-01-22", "total_cases": 0.379, "total_deaths": 0.012, "id": "China#2020-01-22"}
+{"country": "United States", "date": "2021-11-28", "total_cases": 144869.409, "total_deaths": 2332.844, "id": "United States#2021-11-28"}
+{"country": "India", "date": "2021-11-28", "total_cases": 24817.431, "total_deaths": 336.434, "id": "India#2021-11-28"}
+{"country": "European Union", "date": "2021-11-28", "total_cases": 103296.643, "total_deaths": 1882.44, "id": "European Union#2021-11-28"}
+{"country": "China", "date": "2021-11-28", "total_cases": 68.376, "total_deaths": 3.21, "id": "China#2021-11-28"}
+{"country": "United States", "date": "2021-11-27", "total_cases": 144784.91, "total_deaths": 2332.535, "id": "United States#2021-11-27"}
+{"country": "India", "date": "2021-11-27", "total_cases": 24811.468, "total_deaths": 336.265, "id": "India#2021-11-27"}
+{"country": "European Union", "date": "2021-11-27", "total_cases": 102819.181, "total_deaths": 1880.313, "id": "European Union#2021-11-27"}
+{"country": "China", "date": "2021-11-27", "total_cases": 68.347, "total_deaths": 3.21, "id": "China#2021-11-27"}
+{"country": "United States", "date": "2021-11-26", "total_cases": 144711.149, "total_deaths": 2331.973, "id": "United States#2021-11-26"}
+{"country": "India", "date": "2021-11-26", "total_cases": 24805.171, "total_deaths": 335.819, "id": "India#2021-11-26"}
+{"country": "European Union", "date": "2021-11-26", "total_cases": 102411.677, "total_deaths": 1877.393, "id": "European Union#2021-11-26"}
+{"country": "China", "date": "2021-11-26", "total_cases": 68.331, "total_deaths": 3.21, "id": "China#2021-11-26"}
+{"country": "China", "date": "2021-11-25", "total_cases": 68.314, "total_deaths": 3.21, "id": "China#2021-11-25"}
+{"country": "United States", "date": "2021-11-25", "total_cases": 144557.663, "total_deaths": 2331.195, "id": "United States#2021-11-25"}
+{"country": "India", "date": "2021-11-25", "total_cases": 24799.201, "total_deaths": 335.485, "id": "India#2021-11-25"}
+{"country": "European Union", "date": "2021-11-25", "total_cases": 101748.607, "total_deaths": 1873.15, "id": "European Union#2021-11-25"}
