@@ -95,8 +95,12 @@ class CovidDataAutomation:
         records = json.loads(records)
 
         with open('covid_data.json', 'a') as file:
+            counter = 0
             for record in records:
                 file.write(json.dumps(record))
+                if counter < len(records) - 1:
+                    file.write("\n")
+                counter += 1
 
     def process_incrementally(self):
         self.data = self.data[self.required_columns] \
@@ -348,9 +352,27 @@ class CausalityModel:
         graph = fig.to_html(full_html=False, default_height=500, default_width=700)
         return graph
 
+    def worldMap(self):
+        covid_csv_dataset = "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv"
+
+        total_cases_data = pd.read_csv(covid_csv_dataset)
+
+        total_cases_data.tail()
+
+        world_map = px.choropleth(
+            total_cases_data,
+            locations = 'location',
+            locationmode = 'country names',
+            color = 'total_cases_per_million',
+            animation_frame = 'date')
+        world_map.update_layout(title_text = 'COVID-19 Trends from the beginning of time')
+        graph = world_map.to_html(full_html=False, default_height=500, default_width=700)
+        return graph
+
 def index(request):
     causalityModel = CausalityModel()
     context = {}
+    context['worldMap'] = causalityModel.worldMap()
     #context['graphCases'] = causalityModel.visualizeCases(causalityModel.df_cases)
     context['graphCasesArea'] = causalityModel.visualizeCasesArea(causalityModel.df_cases)
     context['graphCasesDaily'] = causalityModel.visualizeCases(causalityModel.df_cases_diff)
